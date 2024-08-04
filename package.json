@@ -13,7 +13,8 @@
     "format": "prettier --write src/",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"src/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md|vue)\"",
     "lint:style": "stylelint \"src/**/*.{vue,css,scss}\" --fix",
-    "check": "run-p type-check lint lint:style spellcheck --"
+    "check": "run-p type-check lint lint:style spellcheck --",
+    "prepare":"husky install"
   },
   "dependencies": {
     "pinia": "^2.1.7",
