@@ -1,0 +1,28 @@
+{
+    // 引入外部字典文件，用于扩展cspell的拼写检查能力
+    "import": ["@cspell/dict-lorem-ipsum/cspell-ext.json"],
+    // 设置拼写检查对大小写不敏感
+    "caseSensitive": false,
+    // 定义使用自定义字典"custom-words"
+    "dictionaries": ["custom-words"],
+    // 定义字典的具体配置
+    "dictionaryDefinitions": [
+      {
+        // 自定义字典的名称
+        "name": "custom-words",
+        // 自定义字典文件的路径
+        "path": "./.cspell/custom-words.txt",
+        // 将字典中的词添加到cspell的词库中
+        "addWords": true
+      }
+    ],
+    // 指定cspell忽略检查的文件路径模式
+    "ignorePaths": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/lib/**",
+      "**/docs/**",
+      "**/stats.html",
+      "**/detect.ts"
+    ]
+  }
