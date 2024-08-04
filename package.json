@@ -27,7 +27,8 @@
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5",
-     "@icon-park/vue-next": "1.4.2"
+     "@icon-park/vue-next": "1.4.2",
+      "smooth-dnd": "0.12.1"
   },
   "devDependencies": {
 
